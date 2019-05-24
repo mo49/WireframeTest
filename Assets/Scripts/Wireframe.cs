@@ -8,7 +8,8 @@ public class Wireframe : MonoBehaviour
     void Start()
     {
         MeshFilter mf = GetComponent<MeshFilter>();
-        mf.mesh.SetIndices(mf.mesh.GetIndices(0), MeshTopology.Lines, 0);
+        //mf.mesh.SetIndices(mf.mesh.GetIndices(0), MeshTopology.Lines, 0);
+        mf.mesh.SetIndices(mf.mesh.GetIndices(0), MeshTopology.Points, 0);
     }
 
     // Update is called once per frame
